@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" slt="logo">
+        </div>
+        <nav>
+            <a href="index.html" class="bold">Work</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <h1 class="proj_title">Cards</h1>
+    <img src="images/cards/cardsHero.png" alt="Cards Image" class="hero">
+    
+    <div class="projInfo">
+        <h2>2026</h2>
+        <h2>HTML, CSS, JavaScript</h2>
+        <h2>DES157A Interactive Media II</h2>
+    </div>
+
+    <section>
+        <h2 class="projSections">Project Overview</h2>
+
+        <p class="projBodyText">Game On acted as the final project for the Interactive Media II course. I was tasked with following a game engine script that used objects and data to create some kind of gaming experience. It also served as the ultimate test of my HTML, CSS, and Java Script skills.
+        </p>
+    </section>
+
+    <section>
+        <h2 class="projSections">Process</h2>
+
+        <p class="projBodyText">
+        Going into the project, I knew I wanted to create a rogue-like card game system akin to Balatro. I was confident in my ability to use Java Script beyond what was required for the assignment. The first step was sketching several examples of what the main page would look like. 
+        </p>
+        <img src="images/cards/cardsSketch.png" alt="1st Sketch of Web Layoout" class="centered">
+        <p class="projBodyText">
+        After settling on a design that I felt best maximized the use of screen size, mocked up a more detailed draft and eventually a colored mock. 
+        </p>
+        <img src="images/cards/cardsSketch2.png" alt="more detailed sketch" class="centered">
+        <img src="images/cards/cardsColor.png" alt="Color Prototype" class="centered">
+        <p class="projBodyText">
+        With the visual aspect of the project handled, I began working on the logistical side. 
+        </br></br> 
+        I studied the way that other similar randomized card games handled their systems and drafted a chart of the game’s flow to help visualize my thoughts. 
+        </p>
+        <img src="images/cards/cardsFlow.png" alt="chart of the webflow" class="centered">
+
+        <div id="tinyFeastDivider">
+            <p class="projBodyText">
+                I started by working largely in HTML and CSS focusing on laying the elements out similar to the mock I had created earlier. Leaning into the stylization, I chose a font that felt more appropriate fo the poker-adjacent theme and adjusted the size of elements
+            </p>
+            <p class="projBodyText">
+                With the basic elements laid out, I began to work on the logic of the game through JavaScript. The first hurdle was generating a random hand of cards with both values and suits. I experimented with several methods before I arrived on a nested for loop that created a card object, pushed it to a deck array, and used the Fisher-Yates shuffling algorithm to randomize the deck. 
+            </p>
+            <p class="projBodyText">
+                Once the deck was generated, I needed a way to visually display the cards for the user to interact with, so I created a hand. Like with a real deck of cards, I removed a set number of cards and filled them into a hand. I created a function that would then display the cards using inner-HTML on to the HTML elements I had created earlier.
+            </p>
+            <p class="projBodyText">
+                Next, I needed to implement a system to detect when a card was being selected or deselected by the player and to ensure a limited number of cards could be selected at once. With the selection feature worked out, I created a discard system allowing you to remove cards from your hand a limited number of times to find better cards.
+            </p>
+            <p class="projBodyText">
+                Lastly, I worked on the scoring system, added upgrades that could be acquired in-between rounds, and balanced the game so challenges felt difficult but engaging.
+            </p>
+            <img src="images/cards/cardsFinal.png" alt="Final version of project" class="centered">
+        </div>
+
+        <h2 class="projSections takeAways">Take Aways</h2>
+        <p class="projBodyText">Game On was my biggest coding venture at the time and at many points throughout the project I felt like I had bit off more than I could chew. It was only through referencing other people’s projects and meeting with my mentors that I was able to see my vision through.
+        </br></br>
+
+        Ultimately, the lesson I learned is the importance of giving yourself patience and grace. When I encountered an impossible seeming roadblock, I would step away from the project and allow my mind to focus on something else and when I least expected it, the answer would come to me. </p>
+    
+
+        <section>
+            <a href="#">
+                <div class="upButton">Back to Top</div>
+            </a>
+            <section class="footer">
+                <a href="about.html">Kenny Yu</a>
+                <a href="&#107;&#101;&#110;&#110;&#121;&#108;&#103;&#109;&#052;&#053;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">kennylgm45@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kenny-yu-82a29a240/">LinkedIn</a>
+            </section>
+        </section>
+    </section>
+</body>
