@@ -2,12 +2,12 @@
     "use strict";
     console.log("testing js");
 
-    // const introName = document.querySelector("#intro-name");
+    const hamburger = document.querySelector("#hamburger");
+    const dropdown = document.querySelector(".navigation");
+    
+    hamburger.addEventListener("click", function(){
+        dropdown.classList.toggle("aboveScreen");
+    });
 
-    // introName.addEventListener("mouseover", function(){
-    //     introName.classList.add("expand");
-    // });
-    // introName.addEventListener("mouseout", function(){
-    //     introName.classList.remove("expand");
-    // });
+
 })();
