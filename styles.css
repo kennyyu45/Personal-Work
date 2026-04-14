@@ -169,7 +169,13 @@ header div img{
 
 .projInfo h2{
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.35em;
+    font-weight: lighter;
+}
+
+.projInfo h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 
 .projSections{
@@ -180,7 +186,6 @@ header div img{
 }
 
 .projBodyText{
-    
     padding-left: 15vw;
     padding-right: 15vw;
 }
